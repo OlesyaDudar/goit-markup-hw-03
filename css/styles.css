@@ -13,6 +13,35 @@
 	--modal-overlay: rgba(46, 47, 66, 0.4);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+ul,
+ol {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+img {
+	display: block;
+}
+
+.container {
+	max-width: 1158px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
 body {
 	font-family: 'Roboto', sans-serif;
 	color: var(--text-color);
@@ -21,13 +50,45 @@ body {
 
 .list {
 	list-style: none;
+	display: flex;
+	gap: 24px;
+
+}
+
+.nolist {
+	gap: 40px;
 }
 
 .link {
 	text-decoration: none;
+
 }
 
 /*studio*/
+.container-preference {
+	padding-top: 120px;
+}
+
+.container-section {
+	padding-top: 120px;
+	padding-bottom: 120px;
+
+}
+
+.container-nav {
+	display: flex;
+
+}
+
+.container-address {
+	margin-left: 332px;
+}
+
+.container-header {
+	display: flex;
+	padding: 24px 0;
+
+}
 
 .logo {
 	color: var(--primary-brand);
@@ -37,6 +98,8 @@ body {
 	line-height: 1.17;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
+	margin-right: 76px;
+
 }
 
 .logo-span {
@@ -49,6 +112,8 @@ body {
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
+
+
 }
 
 .header-nav:hover {
@@ -61,6 +126,7 @@ body {
 
 .header-adress {
 	font-style: normal;
+	margin-left: auto;
 }
 
 .header-adress-link {
@@ -80,6 +146,8 @@ body {
 
 .service {
 	background: var(--dark);
+	padding: 188px 0;
+	display: flex;
 }
 
 .service-name {
@@ -89,7 +157,12 @@ body {
 	line-height: 1.07;
 	text-align: center;
 	letter-spacing: 0.02em;
+	margin: 0 auto;
+	max-width: 496px;
+	margin-bottom: 48px;
+
 }
+
 
 .service-button {
 	font-family: "Roboto", sans-serif;
@@ -100,6 +173,11 @@ body {
 	color: var(--main-color);
 	cursor: pointer;
 	background: var(--primary-brand);
+	border-radius: 4px;
+	padding: 16px 32px;
+	display: block;
+	margin: 0 auto;
+
 }
 
 .service-button:focus {
@@ -118,10 +196,15 @@ body {
 	color: var(--dark);
 }
 
+.preference-item {
+	width: calc((100% - 72px) / 4);
+}
+
 .preference-text {
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
+
 }
 
 .name-section {
@@ -132,6 +215,12 @@ body {
 	text-transform: capitalize;
 	text-align: center;
 	color: var(--dark);
+	margin-bottom: 72px;
+	margin-top: 0;
+}
+
+.list-img {
+	width: calc((100% - 48px) / 3);
 }
 
 .team {
@@ -144,16 +233,24 @@ body {
 	line-height: 1.2;
 	letter-spacing: 0.02em;
 	color: var(--dark);
+	text-align: center;
+	margin-top: 32px;
+	margin-bottom: 8px;
+
 }
 
 .team-profession {
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
+	text-align: center;
+	margin-bottom: 32px;
 }
 
 .footer-section {
 	background-color: var(--dark);
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 .footer-text {
@@ -161,6 +258,7 @@ body {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: var(--light);
+	max-width: 264px;
 }
 
 .logo-footer {
@@ -169,6 +267,8 @@ body {
 
 .team-card {
 	background: var(--main-color);
+	border-radius: 0px 0px 4px 4px;
+	width: calc((100% - 72px) / 4);
 }
 
 /* portfolio */
@@ -178,6 +278,7 @@ body {
 	line-height: 1.2;
 	letter-spacing: 0.02em;
 	color: var(--dark);
+
 }
 
 .portfolio-project-style {
@@ -185,6 +286,7 @@ body {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: var(--text-color);
+
 }
 
 .portfolio-nav-button:hover {
@@ -206,4 +308,40 @@ body {
 	cursor: pointer;
 	letter-spacing: 0.04em;
 	color: var(--primary-brand);
+	border: 1px solid var(--accent);
+	border-radius: 4px;
+	justify-content: center;
+	align-items: center;
+	padding: 12px 24px;
+	box-sizing: border-box;
+
 }
+
+.portfolio-menu {
+
+	display: flex;
+	margin: 0 auto;
+	margin-bottom: 72px;
+	justify-content: center;
+
+}
+
+.portfolio-content {
+	flex-wrap: wrap;
+	gap: 48px 24px;
+}
+
+.portfolio-content-card {
+	box-sizing: border-box;
+	border-left: 1px solid var(--accent);
+	border-bottom: 1px solid var(--accent);
+	border-right: 1px solid var(--accent);
+	width: calc((100% - 48px) / 3);
+}
+
+.portolio-card-text {
+	padding-top: 32px;
+	padding-bottom: 32px;
+	padding-left: 16px;
+}
+.container-porfolio {padding-top: 96px; padding-bottom: 120px;}
