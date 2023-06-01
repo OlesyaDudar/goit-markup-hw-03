@@ -359,9 +359,6 @@ body {
 	box-sizing: border-box;
 	border: 1px solid var(--accent);
 	border-top: none;
-	border-left: 1px solid var(--accent);
-	border-bottom: 1px solid var(--accent);
-	border-right: 1px solid var(--accent);
 	width: calc((100% - 48px) / 3);
 }
 
