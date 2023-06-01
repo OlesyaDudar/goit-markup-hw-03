@@ -38,9 +38,9 @@ img {
 .container {
 	max-width: 1158px;
 	width: 100%;
-	padding: 0 15px;
 	margin: 0 auto;
-	
+	padding: 0 15px;
+
 }
 
 body {
@@ -66,26 +66,25 @@ body {
 }
 
 /*studio*/
-.header{
+.header {
 	box-sizing: border-box;
-	bottom: 1px solid var(--accent);
+	border-bottom: : 1px solid var(--accent);
 }
+
 .container-preference {
 	padding-top: 120px;
 }
 
-.container-section {
-	padding: 120px 0
-
-}
 
 .container-nav {
 	display: flex;
+	align-items: center;
 
 }
 
 .container-address {
 	margin-left: 332px;
+	align-items: center;
 }
 
 .container-header {
@@ -184,7 +183,7 @@ body {
 	margin: 0 auto;
 	min-width: 169px;
 	height: 56px;
-	
+
 
 
 }
@@ -196,15 +195,35 @@ body {
 .service-button:hover {
 	background-color: var(--pressed-state);
 }
-.container-preference{ padding-bottom: 120px;}
-.preference-title {margin-bottom: 8px; }
-.visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden; }
+
+.container-preference {
+	padding: 120px 0;
+}
+
+
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+	
+
+}
+
 .preference-name {
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.2;
 	letter-spacing: 0.02em;
 	color: var(--dark);
+	margin-bottom: 8px;
 }
 
 .preference-item {
@@ -226,8 +245,14 @@ body {
 	text-transform: capitalize;
 	text-align: center;
 	color: var(--dark);
-	margin-bottom: 72px;
+
 	margin-top: 0;
+	margin-bottom: 72px;
+}
+
+
+.section-doing {
+	padding: 120px 0;
 }
 
 .list-img {
@@ -236,8 +261,9 @@ body {
 
 .team {
 	background: var(--light);
+	padding: 120px 0;
 }
-
+.team-text {padding: 32px 16px;}
 .team-name {
 	font-weight: 500;
 	font-size: 20px;
@@ -245,7 +271,7 @@ body {
 	letter-spacing: 0.02em;
 	color: var(--dark);
 	text-align: center;
-	margin-top: 32px;
+	
 	margin-bottom: 8px;
 
 }
@@ -255,7 +281,7 @@ body {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	text-align: center;
-	margin-bottom: 32px;
+	
 }
 
 .footer-section {
@@ -282,7 +308,12 @@ body {
 	width: calc((100% - 72px) / 4);
 
 }
-.footer-link{ display: inline-block; margin-bottom: 16px; }
+
+.footer-link {
+	display: inline-block;
+	margin-bottom: 16px;
+}
+
 /* portfolio */
 .portfolio-foto-name {
 	font-weight: 500;
@@ -356,4 +387,8 @@ body {
 	padding-bottom: 32px;
 	padding-left: 16px;
 }
-.container-porfolio {padding-top: 96px; padding-bottom: 120px;}
+
+.container-porfolio {
+	padding-top: 96px;
+	padding-bottom: 120px;
+}
