@@ -38,8 +38,9 @@ img {
 .container {
 	max-width: 1158px;
 	width: 100%;
-	margin: 0 auto;
 	padding: 0 15px;
+	margin: 0 auto;
+	
 }
 
 body {
@@ -65,13 +66,16 @@ body {
 }
 
 /*studio*/
+.header{
+	box-sizing: border-box;
+	bottom: 1px solid var(--accent);
+}
 .container-preference {
 	padding-top: 120px;
 }
 
 .container-section {
-	padding-top: 120px;
-	padding-bottom: 120px;
+	padding: 120px 0
 
 }
 
@@ -173,10 +177,15 @@ body {
 	color: var(--main-color);
 	cursor: pointer;
 	background: var(--primary-brand);
+	border: none;
 	border-radius: 4px;
 	padding: 16px 32px;
 	display: block;
 	margin: 0 auto;
+	min-width: 169px;
+	height: 56px;
+	
+
 
 }
 
@@ -187,7 +196,9 @@ body {
 .service-button:hover {
 	background-color: var(--pressed-state);
 }
-
+.container-preference{ padding-bottom: 120px;}
+.preference-title {margin-bottom: 8px; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden; }
 .preference-name {
 	font-weight: 500;
 	font-size: 20px;
@@ -269,8 +280,9 @@ body {
 	background: var(--main-color);
 	border-radius: 0px 0px 4px 4px;
 	width: calc((100% - 72px) / 4);
-}
 
+}
+.footer-link{ display: inline-block; margin-bottom: 16px; }
 /* portfolio */
 .portfolio-foto-name {
 	font-weight: 500;
