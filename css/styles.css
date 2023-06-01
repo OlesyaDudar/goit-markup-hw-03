@@ -81,10 +81,7 @@ body {
 
 }
 
-.container-address {
-	margin-left: 332px;
-	align-items: center;
-}
+
 
 .container-header {
 	display: flex;
@@ -116,9 +113,10 @@ body {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	padding: 24px 0;
-	gap: 40px;
+
 
 }
+.menu {gap: 40px;}
 
 .header-nav:hover {
 	color: var(--pressed-state);
@@ -132,6 +130,8 @@ body {
 	font-style: normal;
 	margin-left: auto;
 	padding: 24px 0;
+	margin-left: 332px;
+	align-items: center;
 }
 
 .header-adress-link {
@@ -394,5 +394,5 @@ gap: 40px;}
 
 .container-porfolio {
 	padding: 96px 0 120px 0;
-	
+
 }
