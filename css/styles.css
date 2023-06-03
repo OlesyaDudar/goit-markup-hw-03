@@ -117,16 +117,17 @@ body {
 .header-adress {
 	font-style: normal;
 	margin-left: auto;
-	padding: 24px 0;
-	margin-left: 332px;
-	align-items: center;
+	align-items: center;	
 }
 
 .header-adress-link {
+	
 	color: var(--text-color);
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
+	padding: 24px 0;
+	
 }
 
 .header-adress-link:focus {
@@ -235,7 +236,7 @@ body {
 }
 
 .section-doing {
-	padding: 120px 0;
+	padding-bottom: 120px;
 }
 
 .list-img {
@@ -295,6 +296,14 @@ body {
 .footer-link {
 	display: inline-block;
 	margin-bottom: 16px;
+	color: var(--primary-brand);
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 1.17;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	
 }
 
 /* portfolio */
