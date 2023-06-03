@@ -121,7 +121,7 @@ body {
 }
 
 .header-adress-link {
-	
+	display: block;
 	color: var(--text-color);
 	font-size: 16px;
 	line-height: 1.5;
